@@ -136,8 +136,8 @@ body{
     gap: 5em;
 }
 
-.about *{
-    /* outline: 1px solid #fff; */
+.about .container{
+    background-color: var(--blue-main);
 }
 
 .about__img{
