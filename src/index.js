@@ -1,4 +1,5 @@
 const express = require('express');
+const { join } = require('path');
 const app = express();
 const path = require('path');
 
@@ -12,5 +13,6 @@ app.engine('html', require('ejs').renderFile);
 app.use(require('./routes/index'));
 
 // archivos estáticos
+app.use(express.static(path.join(__dirname, 'public')));
 
 module.exports = app;
